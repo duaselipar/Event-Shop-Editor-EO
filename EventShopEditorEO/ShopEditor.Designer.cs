@@ -755,6 +755,7 @@
             ClientSize = new Size(719, 796);
             Controls.Add(tabControl1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "ShopEditor";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Event Shop Editor By DuaSelipar";

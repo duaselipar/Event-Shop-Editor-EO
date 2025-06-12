@@ -9,7 +9,12 @@
 	  <PublishSingleFile>true</PublishSingleFile>
 	  <SelfContained>false</SelfContained>
 	  <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+	  <ApplicationIcon>shop.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="shop.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="MySql.Data" Version="9.3.0" />
