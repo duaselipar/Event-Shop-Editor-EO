@@ -28,9 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShopEditor));
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
             groupBox3 = new GroupBox();
+            linkLabel2 = new LinkLabel();
+            linkLabel1 = new LinkLabel();
+            label20 = new Label();
             btncnt = new Button();
             groupBox2 = new GroupBox();
             btnclntpath = new Button();
@@ -94,6 +98,7 @@
             txtnedlvl = new TextBox();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
+            groupBox3.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox1.SuspendLayout();
             tabPage2.SuspendLayout();
@@ -132,12 +137,46 @@
             // 
             // groupBox3
             // 
+            groupBox3.Controls.Add(linkLabel2);
+            groupBox3.Controls.Add(linkLabel1);
+            groupBox3.Controls.Add(label20);
             groupBox3.Location = new Point(12, 284);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(688, 139);
+            groupBox3.Size = new Size(688, 180);
             groupBox3.TabIndex = 3;
             groupBox3.TabStop = false;
             groupBox3.Text = "About";
+            // 
+            // linkLabel2
+            // 
+            linkLabel2.AutoSize = true;
+            linkLabel2.Location = new Point(90, 125);
+            linkLabel2.Name = "linkLabel2";
+            linkLabel2.Size = new Size(63, 15);
+            linkLabel2.TabIndex = 2;
+            linkLabel2.TabStop = true;
+            linkLabel2.Text = "DuaSelipar";
+            linkLabel2.LinkClicked += linkLabel2_LinkClicked;
+            // 
+            // linkLabel1
+            // 
+            linkLabel1.AutoSize = true;
+            linkLabel1.Location = new Point(90, 94);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(45, 15);
+            linkLabel1.TabIndex = 1;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "GitHub";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Location = new Point(6, 19);
+            label20.Name = "label20";
+            label20.Size = new Size(598, 150);
+            label20.TabIndex = 0;
+            label20.Text = resources.GetString("label20.Text");
             // 
             // btncnt
             // 
@@ -721,6 +760,8 @@
             Text = "Event Shop Editor By DuaSelipar";
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
+            groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
             groupBox1.ResumeLayout(false);
@@ -802,5 +843,8 @@
         private Label label7;
         private TextBox txttc;
         private GroupBox groupBox3;
+        private Label label20;
+        private LinkLabel linkLabel2;
+        private LinkLabel linkLabel1;
     }
 }

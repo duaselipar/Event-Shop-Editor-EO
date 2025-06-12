@@ -945,6 +945,24 @@ clientpath=
             // Tambah kotak lain kalau ada...
         }
 
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            // GitHub
+            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+            {
+                FileName = "https://github.com/duaselipar/Event-Shop-Editor-EO",
+                UseShellExecute = true
+            });
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+            {
+                FileName = "https://www.facebook.com/profile.php?id=61554036273018",
+                UseShellExecute = true
+            });
+        }
     }
 
 

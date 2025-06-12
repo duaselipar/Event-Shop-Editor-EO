@@ -117,4 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label20.Text" xml:space="preserve">
+    <value>Event Shop Editor EO is a free, open-source Windows application to help you manage and edit the event shop 
+(activitynewshop.ini) for Eudemons Online private servers. Easily connect to your MySQL 8 database and update 
+shop items for Astra, Honor, and Plane shops—complete with item name lookup, quick editing, drag-and-drop 
+sorting, and more.
+
+ Source Code : 
+
+       Facebook : 
+
+This tool is provided as-is, open for community use, feedback, and contributions.
+</value>
+  </data>
 </root>

@@ -43,6 +43,8 @@
         {
             txtSearch = new TextBox();
             dgvSearch = new DataGridView();
+            dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
             btnAdd = new Button();
             btnCancel = new Button();
             groupBox1 = new GroupBox();
@@ -50,8 +52,6 @@
             rbAstra = new RadioButton();
             rbHonor = new RadioButton();
             rbPlane = new RadioButton();
-            dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dgvSearch).BeginInit();
             groupBox1.SuspendLayout();
             groupShopType.SuspendLayout();
@@ -82,9 +82,23 @@
             dgvSearch.Size = new Size(319, 484);
             dgvSearch.TabIndex = 2;
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            dataGridViewTextBoxColumn1.HeaderText = "Item ID";
+            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            dataGridViewTextBoxColumn1.ReadOnly = true;
+            dataGridViewTextBoxColumn1.Width = 80;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            dataGridViewTextBoxColumn2.HeaderText = "Name";
+            dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            dataGridViewTextBoxColumn2.ReadOnly = true;
+            dataGridViewTextBoxColumn2.Width = 175;
+            // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(12, 620);
+            btnAdd.Location = new Point(12, 615);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(80, 27);
             btnAdd.TabIndex = 3;
@@ -93,7 +107,7 @@
             // 
             // btnCancel
             // 
-            btnCancel.Location = new Point(98, 620);
+            btnCancel.Location = new Point(98, 615);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(80, 27);
             btnCancel.TabIndex = 4;
@@ -120,7 +134,7 @@
             groupShopType.Size = new Size(333, 50);
             groupShopType.TabIndex = 6;
             groupShopType.TabStop = false;
-            groupShopType.Text = "Shop Type";
+            groupShopType.Text = "Select Shop Type";
             // 
             // rbAstra
             // 
@@ -154,25 +168,11 @@
             rbPlane.Tag = "4";
             rbPlane.Text = "Plane Shop";
             // 
-            // dataGridViewTextBoxColumn1
-            // 
-            dataGridViewTextBoxColumn1.HeaderText = "Item ID";
-            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            dataGridViewTextBoxColumn1.ReadOnly = true;
-            dataGridViewTextBoxColumn1.Width = 80;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            dataGridViewTextBoxColumn2.HeaderText = "Name";
-            dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            dataGridViewTextBoxColumn2.ReadOnly = true;
-            dataGridViewTextBoxColumn2.Width = 175;
-            // 
             // NewItemForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(355, 660);
+            ClientSize = new Size(355, 652);
             Controls.Add(groupBox1);
             Controls.Add(groupShopType);
             Controls.Add(btnCancel);
